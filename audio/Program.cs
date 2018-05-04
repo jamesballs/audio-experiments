@@ -146,6 +146,8 @@ namespace audio
             }
         }
 
+
+        // Function is heavily modified, but original code is here: https://stackoverflow.com/questions/12611982/generate-audio-tone-to-sound-card-in-c-or-c-sharp
         static void PlaySound(UInt16 volume, int msDuration, Double frequency, short bitsPerSample, int selection, bool wait, bool fade)
         {
             var mStrm = new MemoryStream();
